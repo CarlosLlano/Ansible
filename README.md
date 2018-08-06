@@ -11,7 +11,7 @@ vagrant init
 
 Crear Vagrantfile
 
-```vagrant
+```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -96,7 +96,7 @@ ansible -m ping 'test-servers'
 **Ejecutar un playbook**
 
 El playbook siguiente instala nginx en todas las maquinas hosts:
-```ansible
+```yml
 - hosts: test-servers
   become: true
   task:
@@ -104,7 +104,6 @@ El playbook siguiente instala nginx en todas las maquinas hosts:
       yum: pkg=nginx state=installed
       notify:
         - start nginx
-  
   handlers:
     - name: start nginx
       service: name=nginx state=started
