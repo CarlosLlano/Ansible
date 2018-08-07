@@ -122,4 +122,6 @@ ps waux | grep nginx
 ```
 
 # RECURSOS #
-https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-centos-7
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-centos-7
+* https://www.vagrantup.com/
+* https://www.ansible.com/
